@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="to-do-app">
+                <h2 style="text-align: center; font-weight: bold; font-family: cursive;">My To Do App</h2>
+                <br>
+                <app-to-do-form (addTask)="onAddTask($event)"></app-to-do-form>
+                <app-to-do-list [tasks]="tasks"></app-to-do-list>
+        </div>
+    </div>
+</div>

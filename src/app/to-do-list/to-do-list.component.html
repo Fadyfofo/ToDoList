@@ -1,0 +1,12 @@
+<div class="to-do-list">
+  <ul>
+    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let task of tasks; let i = index">
+      {{ task }}
+      <span class="badge badge-primary badge-pill"><button class="btn btn-danger" (click)="removeTask($event)">Delete</button>
+      </span>
+
+    </li>
+  </ul>
+  </div>
+
+  
